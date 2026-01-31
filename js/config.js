@@ -13,11 +13,11 @@ const CONFIG = {
     // ==================== SOCIAL MEDIA ====================
     socialMedia: {
         instagram: {
-            url: "https://www.instagram.com/bellatakaa",
+            url: "https://www.instagram.com/yvone",
             active: false
         },
         github: {
-            url: "https://github.com/ayashiiiyo",
+            url: "https://github.com/hiuraaaaa",
             active: true
         },
         email: {
@@ -25,7 +25,7 @@ const CONFIG = {
             active: true
         },
         telegram: {
-            url: "https://t.me/abellayah",
+            url: "https://t.me/hiura444",
             active: true
         }
     },
@@ -47,7 +47,7 @@ const CONFIG = {
         {
             title: "WhatsApp",
             subtitle: "Chat Me Via WhatsApp",
-            url: "https://wa.me/message/DXY5TVFLF6DRK1",
+            url: "https://wa.me/message/...",
             icon: "fab fa-whatsapp",
             type: "whatsapp",
             active: true
@@ -55,7 +55,7 @@ const CONFIG = {
         {
             title: "Telegram",
             subtitle: "Chat Me Via Telegram",
-            url: "https://t.me/abellayah",
+            url: "https://t.me/hiura444",
             icon: "fab fa-telegram-plane",
             type: "telegram",
             active: true
@@ -108,7 +108,7 @@ const CONFIG = {
     // ==================== FOOTER ====================
     footer: {
         text: "© Lumina - 2026",
-        url: "https://me.ftk.pp.ua"
+        url: "https://portofolio-hiura.vercel.app/"
     },
 
     // ==================== SECTION TITLES ====================
