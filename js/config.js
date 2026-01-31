@@ -5,7 +5,7 @@ const CONFIG = {
     // ==================== PROFILE INFO ====================
     profile: {
         name: "Hiura",
-        bio: "hmmm",
+        bio: "he/she?",
         avatar: "https://d.uguu.se/NAToJXse.jpg",
         verified: true// Set false kalau ga mau tanda verified
     },
@@ -14,7 +14,7 @@ const CONFIG = {
     socialMedia: {
         instagram: {
             url: "https://www.instagram.com/bellatakaa",
-            active: true
+            active: false
         },
         github: {
             url: "https://github.com/ayashiiiyo",
