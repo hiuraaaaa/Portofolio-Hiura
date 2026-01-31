@@ -5,7 +5,7 @@ const CONFIG = {
     // ==================== PROFILE INFO ====================
     profile: {
         name: "Hiura",
-        bio: "Seorang Anak SMP Pengen Jadi Progamer, Eh tau Nya Jadi Vibe Coder",
+        bio: "hmmm",
         avatar: "https://d.uguu.se/NAToJXse.jpg",
         verified: true// Set false kalau ga mau tanda verified
     },
