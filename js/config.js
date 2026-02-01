@@ -6,7 +6,7 @@ const CONFIG = {
     profile: {
         name: "Naoki",
         bio: "Seorang Anak SMP Pengen Jadi Progamer, Eh tau Nya Jadi Vibe Coder",
-        avatar: "https://github.com/hiuraaaaa/media/blob/main/profil.png",
+        avatar: "https://raw.githubusercontent.com/hiuraaaaa/media/main/profil.png",
         verified: false// Set false kalau ga mau tanda verified
     },
 
