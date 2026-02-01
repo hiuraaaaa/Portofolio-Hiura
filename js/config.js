@@ -4,20 +4,20 @@
 const CONFIG = {
     // ==================== PROFILE INFO ====================
     profile: {
-        name: "Hiura",
-        bio: "he/she?",
-        avatar: "https://d.uguu.se/NAToJXse.jpg",
-        verified: true// Set false kalau ga mau tanda verified
+        name: "Naoki",
+        bio: "Seorang Anak SMP Pengen Jadi Progamer, Eh tau Nya Jadi Vibe Coder",
+        avatar: "https://raw.githubusercontent.com/belluptaka/dat4/main/uploads/a1a05c-1869869516254.jpg",
+        verified: false// Set false kalau ga mau tanda verified
     },
 
     // ==================== SOCIAL MEDIA ====================
     socialMedia: {
         instagram: {
-            url: "https://www.instagram.com/yvone",
-            active: false
+            url: "https://www.instagram.com/bellatakaa",
+            active: true
         },
         github: {
-            url: "https://github.com/hiuraaaaa",
+            url: "https://github.com/ayashiiiyo",
             active: true
         },
         email: {
@@ -25,7 +25,7 @@ const CONFIG = {
             active: true
         },
         telegram: {
-            url: "https://t.me/hiura444",
+            url: "https://t.me/abellayah",
             active: true
         }
     },
@@ -38,7 +38,7 @@ const CONFIG = {
             url: "https://whatsapp.com/channel/0029VbBSk270AgWIpspK6k3m",
             icon: "fab fa-whatsapp",
             type: "whatsapp",
-            active: false
+            active: true
         }
     ],
 
@@ -47,7 +47,7 @@ const CONFIG = {
         {
             title: "WhatsApp",
             subtitle: "Chat Me Via WhatsApp",
-            url: "https://wa.me/message/...",
+            url: "https://wa.me/message/DXY5TVFLF6DRK1",
             icon: "fab fa-whatsapp",
             type: "whatsapp",
             active: true
@@ -55,7 +55,7 @@ const CONFIG = {
         {
             title: "Telegram",
             subtitle: "Chat Me Via Telegram",
-            url: "https://t.me/hiura444",
+            url: "https://t.me/abellayah",
             icon: "fab fa-telegram-plane",
             type: "telegram",
             active: true
@@ -74,41 +74,72 @@ const CONFIG = {
     techStack: [
         {
             title: "JavaScript",
-            subtitle: "Core Programming Language",
+            subtitle: "Main Programming Language",
             url: "https://nodejs.org",
             icon: "fab fa-js",
             type: "javascript",
             active: true
         },
         {
-            title: "Node.js",
-            subtitle: "JavaScript Runtime for Backend.",
+            title: "Golang",
+            subtitle: "Fast, Simple, Reliable.",
             url: "https://go.dev",
-            icon: "fab fa-node-js",
+            icon: "fab fa-golang",
             type: "golang",
             active: true
         },
         {
-            title: "Express.js",
-            subtitle: "Lightweight Backend Framework.",
+            title: "Python",
+            subtitle: "Favorite Language",
             url: "https://www.python.org",
-            icon: "fas fa-server",
+            icon: "fab fa-python",
             type: "python",
+            active: true
+        }
+    ],
+
+    // ==================== PROJECTS ====================
+    projects: [
+        {
+            title: "Taka's Channel Bot",
+            description: "WhatsApp channel automation bot",
+            url: "https://github.com/ayashiiiyo",
+            tags: ["JavaScript", "Node.js", "WhatsApp"],
+            icon: "fas fa-robot",
+            color: "blue",       // blue | purple | pink | green | orange
+            active: true
+        },
+        {
+            title: "Portfolio Website",
+            description: "Personal portfolio with dynamic config",
+            url: "https://github.com/ayashiiiyo",
+            tags: ["HTML", "CSS", "JavaScript"],
+            icon: "fas fa-globe",
+            color: "purple",
+            active: true
+        },
+        {
+            title: "Data Scraper",
+            description: "Python web scraping tool",
+            url: "https://github.com/ayashiiiyo",
+            tags: ["Python", "BeautifulSoup", "Requests"],
+            icon: "fas fa-database",
+            color: "green",
             active: true
         }
     ],
 
     // ==================== SPOTIFY ====================
     spotify: {
-        playlistId: "6b4vOjVdGV7N1yDU9fnXn1",
+        playlistId: "1VZFgPMg8zbfDBc730Zp5T",
         active: true,
         title: "Fav Song"
     },
 
     // ==================== FOOTER ====================
     footer: {
-        text: "© Lumina - 2026",
-        url: "https://portofolio-hiura.vercel.app/"
+        text: "© Takashi - 2026",
+        url: "https://me.ftk.pp.ua"
     },
 
     // ==================== SECTION TITLES ====================
@@ -116,6 +147,7 @@ const CONFIG = {
         connect: "Connect with Me",
         contact: "Contact Me",
         techStack: "Tech Stack",
+        projects: "Projects",
         spotify: "Fav Song"
     },
 
