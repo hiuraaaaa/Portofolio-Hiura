@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loadConnectSection();
         loadContactSection();
         loadTechStackSection();
+        loadProjectsSection();
         loadSpotifySection();
         loadFooter();
         loadSectionTitles();
@@ -131,6 +132,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // ==================== LOAD PROJECTS SECTION ====================
+    function loadProjectsSection() {
+        const container = document.getElementById('projects-grid');
+        if (!container || !CONFIG.projects) return;
+
+        container.innerHTML = '';
+
+        CONFIG.projects.forEach(project => {
+            if (!project.active) return;
+
+            const card = document.createElement('a');
+            card.href = project.url;
+            card.className = `project-card project-${project.color}`;
+
+            const tagsHtml = project.tags
+                .map(tag => `<span class="project-tag">${tag}</span>`)
+                .join('');
+
+            card.innerHTML = `
+                <div class="project-icon-wrap">
+                    <i class="${project.icon} project-icon"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">${project.title}</div>
+                    <div class="project-desc">${project.description}</div>
+                    <div class="project-tags">${tagsHtml}</div>
+                </div>
+                <i class="fas fa-arrow-right project-arrow"></i>
+            `;
+
+            container.appendChild(card);
+        });
+    }
+
     // ==================== LOAD SPOTIFY SECTION ====================
     function loadSpotifySection() {
         const iframe = document.getElementById('spotify-embed');
@@ -157,11 +192,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const connectTitle = document.getElementById('connect-title');
         const contactTitle = document.getElementById('contact-title');
         const techstackTitle = document.getElementById('techstack-title');
+        const projectsTitle = document.getElementById('projects-title');
         const spotifyTitle = document.getElementById('spotify-title');
         
         if (connectTitle) connectTitle.textContent = CONFIG.sections.connect;
         if (contactTitle) contactTitle.textContent = CONFIG.sections.contact;
         if (techstackTitle) techstackTitle.textContent = CONFIG.sections.techStack;
+        if (projectsTitle) projectsTitle.textContent = CONFIG.sections.projects;
         if (spotifyTitle) spotifyTitle.textContent = CONFIG.sections.spotify;
     }
 
@@ -186,6 +223,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const hasActiveTech = CONFIG.techStack && CONFIG.techStack.some(link => link.active);
         if (techstackSection && !hasActiveTech) {
             techstackSection.style.display = 'none';
+        }
+        
+        // Hide Projects section if no active projects
+        const projectsSection = document.getElementById('projects-section');
+        const hasActiveProjects = CONFIG.projects && CONFIG.projects.some(p => p.active);
+        if (projectsSection && !hasActiveProjects) {
+            projectsSection.style.display = 'none';
         }
         
         // Hide Spotify section if not active
@@ -225,10 +269,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ==================== RIPPLE EFFECT ====================
     function addRippleEffect() {
-        document.querySelectorAll('.link-card').forEach(card => {
+        document.querySelectorAll('.link-card, .project-card').forEach(card => {
             card.addEventListener('click', function(e) {
-                const title = this.querySelector('.link-title').textContent;
-                console.log(`Link clicked: ${title}`);
+                const titleEl = this.querySelector('.link-title') || this.querySelector('.project-title');
+                if (titleEl) console.log(`Card clicked: ${titleEl.textContent}`);
                 createRipple(e, this);
             });
         });
@@ -266,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }, observerOptions);
 
-        document.querySelectorAll('.link-card').forEach(card => {
+        document.querySelectorAll('.link-card, .project-card').forEach(card => {
             observer.observe(card);
         });
     }
@@ -415,6 +459,11 @@ style.textContent = `
     }
 
     .link-card {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .project-card {
         position: relative;
         overflow: hidden;
     }
