@@ -4,7 +4,7 @@
 const CONFIG = {
     // ==================== PROFILE INFO ====================
     profile: {
-        name: "Naoki",
+        name: "I'm Hiura",
         bio: "Seorang Anak SMP Pengen Jadi Progamer, Eh tau Nya Jadi Vibe Coder",
         avatar: "https://raw.githubusercontent.com/hiuraaaaa/media/main/profil.png",
         verified: false// Set false kalau ga mau tanda verified
@@ -38,7 +38,7 @@ const CONFIG = {
             url: "https://whatsapp.com/channel/0029VbBSk270AgWIpspK6k3m",
             icon: "fab fa-whatsapp",
             type: "whatsapp",
-            active: true
+            active: false
         }
     ],
 
@@ -73,31 +73,30 @@ const CONFIG = {
     // ==================== TECH STACK ====================
     techStack: [
         {
-            title: "JavaScript",
-            subtitle: "Main Programming Language",
+            title: "JavaScript Vanilla",
+            subtitle: "Core Programming Language",
             url: "https://nodejs.org",
             icon: "fab fa-js",
             type: "javascript",
             active: true
         },
         {
-            title: "Golang",
-            subtitle: "Fast, Simple, Reliable.",
+            title: "Node.js",
+            subtitle: "JavaScript Runtime for Backend.",
             url: "https://go.dev",
-            icon: "fab fa-golang",
+            icon: "fab fa-node-js",
             type: "golang",
             active: true
         },
         {
-            title: "Python",
-            subtitle: "Favorite Language",
+            title: "Express.js",
+            subtitle: "Lightweight Backend Framework.",
             url: "https://www.python.org",
-            icon: "fab fa-python",
+            icon: "fas fa-server",
             type: "python",
             active: true
         }
     ],
-
     // ==================== PROJECTS ====================
     projects: [
         {
