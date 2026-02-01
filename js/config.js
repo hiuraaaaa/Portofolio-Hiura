@@ -101,7 +101,7 @@ const CONFIG = {
     // ==================== PROJECTS ====================
     projects: [
         {
-            title: "Taka's Channel Bot",
+            title: "Alice Channel Bot",
             description: "WhatsApp channel automation bot",
             url: "https://github.com/ayashiiiyo",
             tags: ["JavaScript", "Node.js", "WhatsApp"],
