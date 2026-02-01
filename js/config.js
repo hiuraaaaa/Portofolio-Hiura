@@ -110,9 +110,9 @@ const CONFIG = {
             active: true
         },
         {
-            title: "Portfolio Website",
+            title: "Rest Api`s",
             description: "Personal portfolio with dynamic config",
-            url: "https://github.com/ayashiiiyo",
+            url: "https://api.nefu.biz.id/docs",
             tags: ["HTML", "CSS", "JavaScript"],
             icon: "fas fa-globe",
             color: "purple",
